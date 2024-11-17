@@ -7,9 +7,6 @@ jobs:
   test: 
     timeout-minutes: 10
     runs-on: ubuntu-latest
-    defaults: 
-      run:
-        working-directory: ./tests
     environment: dev
     steps:
       - name: Pull code
@@ -24,7 +21,7 @@ jobs:
         run: "npm ci"
       
       - name: "Trigger tests"
-        run: node tests/test-runner.js
+        run: node test-runner.js
       
       - name: Save report artifacg
         uses: actions/upload-artifact@v3

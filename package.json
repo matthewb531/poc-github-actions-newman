@@ -1,0 +1,11 @@
+{
+  "name": "poc-github-actions-newman",
+  "version": "1.0.0",
+  "description": "",
+  "author": "mb",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
